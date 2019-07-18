@@ -24,7 +24,7 @@ def notes_home_page():
     kwargs = dict(
         pages=pages,
     )
-    return render_template(f"{context['url']}/index.html", **kwargs)
+    return render_template(f"notes/index.html", **kwargs)
 
 
 @app.route('/posts/')
