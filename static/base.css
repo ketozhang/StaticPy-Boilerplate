@@ -12,7 +12,7 @@ html {
   max-width: 90%;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px)  {
   .container {
     max-width: 60%;
   }
@@ -27,6 +27,11 @@ html {
 
 header .nav-item {
   font-weight: bold;
+}
+
+.header-icon {
+  width: 24px;
+  height: 24px;
 }
 
 p .navbar-light .navbar-nav .nav-link.active::after {

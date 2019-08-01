@@ -19,7 +19,7 @@
             {% for social in social_links.values() %}
             <li class="nav-item mx-2">
                 <a class="social-link" href="{{parse_url(social['url'])}}" title="{{ social['text'] }}" target="_blank">
-                    <img src="{{ social['icon'] }}">
+                    <img class="header-icon" src="{{ social['icon'] }}">
                 </a>
             </li>
             {% endfor %}
