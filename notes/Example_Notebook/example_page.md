@@ -1,6 +1,8 @@
 ---
-title: Example Page 2
+title: Example Page
 ---
+
+<div class="text-center">![](example.png)</div>
 
 ## First Section
 

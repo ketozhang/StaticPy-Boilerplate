@@ -63,6 +63,7 @@ def posts_home_page():
 if __name__ == '__main__':
     args = sys.argv[1:]
     if len(args) == 0:
+        log.setLevel('INFO')
         app.run(debug=True, port=8080, local=True)
     elif 'build' in args:
         log.setLevel('INFO')

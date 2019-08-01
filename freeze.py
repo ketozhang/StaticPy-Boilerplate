@@ -112,12 +112,12 @@ def freeze():
         return end - start, build_time
     except Exception as e:
         log.error(e)
-        if backup.exists():
-            log.info(f"restoring {backup.name} -> {build_path.name}")
-            backup.rename(build_path)
         if build_path.exists():
             log.info(f"deleting {build_path.name}")
             rmtree(str(build_path))
+        if backup.exists():
+            log.info(f"restoring {backup.name} -> {build_path.name}")
+            backup.rename(build_path)
         return None
 
 
